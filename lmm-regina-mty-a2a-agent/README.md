@@ -28,6 +28,34 @@ Tono **cálido y con orgullo regio**. Pedir contexto antes de armar itinerarios 
 6. **A2A 2.0.0 (breaking):** `<a2a:interfaces>` explícito + `<a2a:update-task-status>`
    (ya presentes en la plantilla Diego).
 
+## Cómo correr / desplegar
+
+El listener está parametrizado (`${http.host}` / `${http.port}`, default `0.0.0.0:8081`)
+y el agent-card anuncia `${agent.publicUrl}`. Así el mismo artefacto sirve local y en CloudHub.
+
+### Local (Studio · Run As → Mule Application)
+VM arguments:
+```
+-Dmule.key=<TU_MASTER_KEY>
+-Dhttp.port=8082
+-Dagent.publicUrl=http://localhost:8082/agent
+```
+Prueba directa (conector A2A 2.0.0 → método `SendMessage`):
+```bash
+curl -s -X POST http://localhost:8082/agent \
+  -H "Content-Type: application/json" -H "A2A-Version: 1.0" \
+  -d @../demo/payloads/regina-agent-turn1.json | jq .
+```
+
+### CloudHub 2.0 (Runtime Manager)
+1. Desplegar el `.jar` (`lmm-regina-mty-a2a-agent-1.0.0-mule-application.jar`) al org `nrik4c` / región `can-c1`.
+2. Dejar `http.port` en **8081** (default — NO ponerlo en 8082; la plataforma enruta a 8081).
+3. Propiedades del deployment:
+   - `mule.key` = tu master key (marcar como **secured property**).
+   - `agent.publicUrl` = `https://<nombre-app>-<sufijo>.<region>.cloudhub.io/agent`
+     (se conoce tras el primer deploy; setéala y reinicia para que el agent-card la anuncie).
+4. Verificar: `GET https://<url-publica>/agent/.well-known/agent-card.json` → Regina / Monterrey / 3 skills.
+
 ## Checklist
 
 - [ ] Clonado desde Diego
