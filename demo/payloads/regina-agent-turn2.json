@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "id": "t2",
+  "method": "SendMessage",
+  "params": {
+    "message": {
+      "messageId": "m2",
+      "role": "ROLE_USER",
+      "parts": [{ "text": "De los lugares que ya me recomendaste, cual cierra mas tarde para la cena del dia 2?" }],
+      "contextId": "0073b122-9ecc-442a-b370-960577a6b154"
+    },
+    "configuration": {
+      "acceptedOutputModes": ["text/plain"],
+      "returnImmediately": false
+    }
+  }
+}

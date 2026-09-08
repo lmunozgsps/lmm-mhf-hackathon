@@ -1,0 +1,16 @@
+{
+  "jsonrpc": "2.0",
+  "id": "t1",
+  "method": "SendMessage",
+  "params": {
+    "message": {
+      "messageId": "m1",
+      "role": "ROLE_USER",
+      "parts": [{ "text": "Voy 3 dias a Monterrey en pareja, presupuesto medio, nos gusta la comida y la historia. Armame un itinerario." }]
+    },
+    "configuration": {
+      "acceptedOutputModes": ["text/plain"],
+      "returnImmediately": false
+    }
+  }
+}

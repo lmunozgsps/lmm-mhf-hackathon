@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties"
+	xmlns:os="http://www.mulesoft.org/schema/mule/os"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:a2a="http://www.mulesoft.org/schema/mule/a2a" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/a2a http://www.mulesoft.org/schema/mule/a2a/current/mule-a2a.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd
+http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="5987edc4-b3a8-4932-b8fd-ef1f711ce92b" >
+		<http:listener-connection host="${http.host}" port="${http.port}" />
+	</http:listener-config>
+	<a2a:server-config name="A2A_Server" doc:name="A2A Server" doc:id="fc92b8c1-1aa1-4197-afc0-a3993190ae92" >
+		<a2a:connection listenerConfig="HTTP_Listener_config" agentPath="/agent">
+			<a2a:interfaces>
+				<a2a:interface protocol="JSONRPC" path="/"/>
+			</a2a:interfaces>
+		</a2a:connection>
+		<a2a:agent-card >
+			<a2a:json ><![CDATA[{
+  "$schema": "https://a2a-protocol.org/schemas/v1.2.0/agent-card.json",
+  "name": "lmm-regina-mty-guide",
+  "display_name": "Regina - Guía Turística Monterrey",
+  "version": "1.0.0",
+  "protocolVersion": "0.3.0",
+  "description": "Agente virtual experto en turismo, gastronomía, historia y logística local para Monterrey y su área metropolitana (Nuevo León). Ofrece itinerarios optimizados por zonas, consejos prácticos de seguridad, transporte y clima, y recomendaciones culinarias regias.",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "url": "${agent.publicUrl}",
+  "preferredTransport": "JSONRPC",
+  "supportedInterfaces": [
+    {
+      "protocolBinding": "JSONRPC",
+      "url": "${agent.publicUrl}"
+    }
+  ],
+  "author": "Equipo La Mula Mala",
+  "license": "MIT",
+  "homepage": "https://mule-monterrey-guide.example.com",
+  "language": "es-MX",
+  "capabilities": {
+    "languages": ["es", "en"],
+    "domains": ["turismo", "gastronomia", "historia", "logistica-urbana"],
+    "input_modes": ["text", "voice"],
+    "output_modes": ["text", "application/json"],
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "skills": [
+    {
+      "id": "crear_itinerario",
+      "name": "crear_itinerario",
+      "description": "Genera itinerarios optimizados por días y zonas de Monterrey (Barrio Antiguo, Macroplaza, Santa Lucía, Parque Fundidora, San Pedro / Valle, Cumbres) y atractivos del área metropolitana (Cerro de la Silla, Chipinque, Cola de Caballo, Grutas de García), agrupando por cercanía para evitar traslados largos.",
+      "inputModes": ["application/json", "text/plain"],
+      "outputModes": ["application/json", "text/plain"],
+      "tags": [
+        "turismo",
+        "Monterrey",
+        "Nuevo Leon",
+        "viajes",
+        "mexico",
+        "itinerarios"
+      ],
+      "parameters": {
+        "dias": "number - Cantidad de días de estancia",
+        "presupuesto": "string - Mochilero, medio, alto o lujo",
+        "intereses": "array - Categorías de interés (arte, comida, historia, vida nocturna, naturaleza, aventura)",
+        "compania": "string - Solo, en pareja, amigos o familia con niños"
+      },
+      "returns": "Itinerario estructurado por jornadas, recomendaciones de transporte y tips locales."
+    },
+    {
+      "id": "recomendar_gastronomia",
+      "name": "recomendar_gastronomia",
+      "description": "Proporciona sugerencias gastronómicas regias, desde antojitos y carne asada de barrio hasta alta cocina galardonada (cabrito, machaca, agujas norteñas, tacos de trompo estilo regio, glorias de Linares).",
+      "inputModes": ["application/json", "text/plain"],
+      "outputModes": ["application/json", "text/plain"],
+      "tags": [
+        "turismo",
+        "Monterrey",
+        "Nuevo Leon",
+        "gastronomia",
+        "mexico"
+      ],
+      "parameters": {
+        "zona": "string - Zona o municipio del área metropolitana (ej. Barrio Antiguo, Centro, San Pedro, Valle, Cumbres, Guadalupe)",
+        "tipo_comida": "string - Callejera, norteña, autor, mariscos, tacos, cabrito",
+        "rango_precio": "string - $, $$, $$$, $$$$"
+      },
+      "returns": "Lista de opciones gastronómicas con platillos insignia y recomendaciones de higiene o reserva."
+    },
+    {
+      "id": "consejos_logistica_seguridad",
+      "name": "consejos_logistica_seguridad",
+      "description": "Ofrece indicaciones sobre tiempos de traslado en Metrorrey, Ecovía, Transmetro, Uber y auto, logística entre municipios, consideraciones de clima (calor extremo, lluvias en cañadas) y pautas de seguridad urbana.",
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain"],
+      "tags": [
+        "turismo",
+        "Monterrey",
+        "Nuevo Leon",
+        "seguridad"
+      ],
+      "parameters": {
+        "origen": "string - Punto o zona de partida",
+        "destino": "string - Punto o zona de llegada"
+      },
+      "returns": "Ruta recomendada, estimación de tiempo real y advertencias locales."
+    }
+  ],
+  "personality": {
+    "tone": "cálido, hospitalario, entusiasta y con orgullo regio",
+    "style": "experto local, amigable, claro y estructurado por zonas; cierra con un Tip de guía local"
+  },
+  "parameters": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 1500
+  },
+  "tags": [
+    "turismo",
+    "Monterrey",
+    "Nuevo Leon",
+    "viajes",
+    "gastronomia",
+    "mexico",
+    "itinerarios"
+  ]
+}]]></a2a:json>
+		</a2a:agent-card>
+	</a2a:server-config>
+	<os:object-store name="Object_store" doc:name="Object store" doc:id="bee0c669-e69b-4444-9b96-710877f081cc" />
+	<http:request-config name="HTTP_Request_config" doc:name="HTTP Request config" doc:id="153fa7a3-b84c-4f8f-a780-8254cfd0c562" >
+		<http:request-connection host="${llmProxy.host}" port="${llmProxy.port}" protocol="HTTPS"/>
+	</http:request-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="2e3ecdcb-8ab5-460d-8b1a-f068abf19148" file="config/config.yaml" />
+	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="2ca05539-aea5-4386-9b88-2d6b9e96c094" file="config\secure\config.yaml" key="${mule.key}" />
+	<flow name="gor-a2a-diego-gdlFlow" doc:id="79d08bc9-b6a4-436d-9589-324ebd2d227d" >
+		<a2a:task-listener doc:name="A2A Server - Task Listener" doc:id="d6d2aa34-0b5f-4aff-b236-4b03c9566a0b" config-ref="A2A_Server"/>
+		<flow-ref doc:name="Pre LLM Call" doc:id="d499a1e0-452b-478a-8a9e-25787d712736" name="preLLM" />
+		<http:request doc:name="LLM Proxy" doc:id="ae87d82c-917a-410f-873a-f5de50f48745" config-ref="HTTP_Request_config" method="POST" path="${llmProxy.path}" responseTimeout="60000" >
+			<http:body ><![CDATA[#[vars.convMessages]]]></http:body>
+			<http:headers ><![CDATA[#[{
+	"client_secret" : p('secure::llmProxy.client_secret'),
+	"client_id" : p("secure::llmProxy.client_id")
+}]]]></http:headers>
+		</http:request>
+		<ee:transform doc:name="LLM Proxy Build completed response" doc:id="2a0ba966-a393-4c69-a110-54656b67891a" >
+			<ee:message />
+			<ee:variables >
+				<ee:set-variable variableName="a2aResponse" ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  statusUpdate: {
+    taskId: vars.task_id,
+    contextId: vars.contextId,
+    status: {
+      state: "TASK_STATE_COMPLETED",
+      message: {
+        messageId: uuid(),
+        role: "ROLE_AGENT",
+        parts: [{ text: payload.choices[0].message.content }]
+      },
+      timestamp: (now() >> "UTC") as String {format: "yyyy-MM-dd'T'HH:mm:ss'Z'"}
+    }
+  }
+}]]></ee:set-variable>
+				<ee:set-variable variableName="convMessages" ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  messages: vars.convMessages.messages ++ [
+    { role: "assistant", content: payload.choices[0].message.content }
+  ]
+}]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<set-payload value="#[vars.a2aResponse]" doc:name="A2A Response" doc:id="c3618edf-ef99-4881-bcc1-dca1ff32bb9d" />
+		<a2a:update-task-status doc:name="A2A Server - Update Task Status" doc:id="fb7634af-3a9f-4785-b965-4df90d818098" config-ref="A2A_Server"/>
+		<os:store doc:name="Store" doc:id="4d9fe88a-3107-4f8e-8d7d-a1af0abd849c" key="#[vars.contextId]" objectStore="Object_store" >
+			<os:value ><![CDATA[#[%dw 2.0
+output application/json
+---
+vars.convMessages]]]></os:value>
+		</os:store>
+		<logger level="INFO" doc:name="Logger" doc:id="554e1901-e4c3-46d8-967f-f35b6b3aa0e6" message="#[payload]" />
+	</flow>
+	<sub-flow name="preLLM" doc:id="728e9b01-0f10-45ad-b5ee-a6a632fc8ce1" >
+		<ee:transform doc:name="Transform Message" doc:id="843addf7-4c8a-47cd-8f47-730f03f84a92" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---	
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<set-variable value="#[output text/plain --- attributes.'contextId']" doc:name="Set ContextId" doc:id="71708dc8-3a91-4ab9-9063-8fb539488554" doc:description="Al iniciar una conversacion el cliente no incluye un ContextId, este se genera en el servidor y se envia en la respuesta para continuar con la conversacion si es necesario." variableName="contextId" />
+		<set-variable value="#[output text/plain --- attributes.'taskId']" doc:name="Set Task Id" doc:id="39d03b37-5386-4248-bdda-5d9e1fe58714" variableName="task_id" />
+		<set-variable value="#[payload.message.parts[0].text]" doc:name="Set task user prompt" doc:id="f9aff55d-70ba-419e-a570-f66f6604c3f3" variableName="user_prompt" />
+		<set-variable value="classpath://agent.prompt" doc:name="Set prompt path" doc:id="27436a60-e0cc-401e-b69c-8e0613471c4d" variableName="systemPromptPath" />
+		<os:retrieve doc:name="Retrieve contextId" doc:id="82086010-a469-4c0a-8dc0-444e5bac95a6" doc:description="Busca la historia de la conversación y la tarea" key="#[vars.contextId]" objectStore="Object_store" target="conversationHistory" >
+			<os:default-value ><![CDATA[#[%dw 2.0
+output application/json
+---
+null]]]></os:default-value>
+		</os:retrieve>
+		<choice doc:name="Choice" doc:id="c25cb604-16f2-4dc2-a276-d5775c68cbcf" >
+			<when expression="#[vars.conversationHistory !=null]" >
+				<ee:transform doc:name="History + user and system prompts (Sliding Window -10)" doc:id="01a5a150-6480-48ef-82c1-f8265019543a" >
+					<ee:message />
+					<ee:variables >
+						<ee:set-variable variableName="convMessages" ><![CDATA[%dw 2.0
+
+output application/json
+
+var updatedHistory = 
+vars.conversationHistory.messages + { role: "user", "content" : vars.user_prompt }
+  	  
+---
+{
+  messages:
+    (if (sizeOf(updatedHistory) > 10) 
+    	updatedHistory[-10 to -1] 
+     else updatedHistory
+    )
+}
+]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="System and user prompts" doc:id="2ad41c97-fbeb-4f7c-b215-2a071b60ab5d" >
+					<ee:message />
+					<ee:variables >
+						<ee:set-variable variableName="convMessages" ><![CDATA[%dw 2.0
+output application/json
+
+---
+{
+ 
+    messages: [{ role: "user", 
+    content: readUrl(vars.systemPromptPath, "text/plain") ++ "\n" ++
+  	(vars.user_prompt default "") }]
+
+}
+]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+			</otherwise>
+		</choice>
+		<set-variable value="agent_result" doc:name="Set artifact name" doc:id="4b83f083-bd01-4196-8802-b1e8e1c56c56" variableName="artifactName" />
+	</sub-flow>
+</mule>

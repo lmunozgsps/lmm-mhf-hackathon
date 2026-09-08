@@ -1,0 +1,811 @@
+[
+  {
+    "hotel_id": "htl_cdmx_0001",
+    "name": "Hotel Presidente Polanco",
+    "area": "Polanco",
+    "address": "Campos Elíseos 218, Polanco, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "business_center"],
+    "price_per_night_from": 3200.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3200.00, "available":  6 },
+      "double":  { "price_per_night": 3850.00, "available":  9 },
+      "suite":   { "price_per_night": 8500.00, "available":  3 },
+      "family":  { "price_per_night": 6200.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0002",
+    "name": "Las Alcobas México City",
+    "area": "Polanco",
+    "address": "Presidente Masaryk 390, Polanco, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "spa", "restaurant", "bar", "parking", "concierge", "rooftop"],
+    "price_per_night_from": 4200.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 4200.00, "available":  4 },
+      "double":  { "price_per_night": 4950.00, "available":  6 },
+      "suite":   { "price_per_night":10500.00, "available":  2 },
+      "family":  { "price_per_night": 7800.00, "available":  2 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0003",
+    "name": "Casa Habita Polanco",
+    "area": "Polanco",
+    "address": "Alejandro Dumas 165, Polanco, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "restaurant", "bar", "rooftop", "pet_friendly"],
+    "price_per_night_from": 3800.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3800.00, "available":  5 },
+      "double":  { "price_per_night": 4400.00, "available":  7 },
+      "suite":   { "price_per_night": 9200.00, "available":  2 },
+      "family":  { "price_per_night": 6800.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0004",
+    "name": "Hyatt Regency Polanco",
+    "area": "Polanco",
+    "address": "Campos Elíseos 204, Polanco, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "business_center", "breakfast_included"],
+    "price_per_night_from": 2950.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2950.00, "available":  8 },
+      "double":  { "price_per_night": 3600.00, "available": 12 },
+      "suite":   { "price_per_night": 7800.00, "available":  4 },
+      "family":  { "price_per_night": 5900.00, "available":  6 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0005",
+    "name": "NH Collection Polanco",
+    "area": "Polanco",
+    "address": "Alejandro Dumas 145, Polanco, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "gym", "restaurant", "bar", "parking", "business_center"],
+    "price_per_night_from": 2200.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2200.00, "available":  7 },
+      "double":  { "price_per_night": 2700.00, "available": 10 },
+      "suite":   { "price_per_night": 5200.00, "available":  3 },
+      "family":  { "price_per_night": 4100.00, "available":  4 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0006",
+    "name": "Ignacia Guest House",
+    "area": "Roma Norte",
+    "address": "Jalapa 208, Roma Norte, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "restaurant", "bar", "breakfast_included", "pet_friendly", "concierge"],
+    "price_per_night_from": 2450.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2450.00, "available":  3 },
+      "double":  { "price_per_night": 2900.00, "available":  5 },
+      "suite":   { "price_per_night": 4800.00, "available":  1 },
+      "family":  { "price_per_night": 3900.00, "available":  2 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0007",
+    "name": "Casa Malí Roma",
+    "area": "Roma Norte",
+    "address": "Cuernavaca 89, Roma Norte, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "gym", "restaurant", "rooftop", "breakfast_included"],
+    "price_per_night_from": 2100.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2100.00, "available":  6 },
+      "double":  { "price_per_night": 2550.00, "available":  8 },
+      "suite":   { "price_per_night": 4200.00, "available":  2 },
+      "family":  { "price_per_night": 3400.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0008",
+    "name": "Nima Local House Hotel",
+    "area": "Roma Norte",
+    "address": "Colima 236, Roma Norte, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "restaurant", "breakfast_included", "pet_friendly"],
+    "price_per_night_from": 1950.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1950.00, "available":  5 },
+      "double":  { "price_per_night": 2350.00, "available":  6 },
+      "suite":   { "price_per_night": 3800.00, "available":  1 },
+      "family":  { "price_per_night": 3100.00, "available":  2 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0009",
+    "name": "Casa Pancha",
+    "area": "Roma Norte",
+    "address": "Guanajuato 138, Roma Norte, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "breakfast_included"],
+    "price_per_night_from": 1450.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1450.00, "available":  7 },
+      "double":  { "price_per_night": 1750.00, "available":  9 },
+      "suite":   { "price_per_night": 2900.00, "available":  2 },
+      "family":  { "price_per_night": 2400.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0010",
+    "name": "La Palomilla Bed & Breakfast",
+    "area": "Roma Norte",
+    "address": "Guanajuato 78, Roma Norte, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "breakfast_included", "pet_friendly"],
+    "price_per_night_from": 1200.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1200.00, "available":  5 },
+      "double":  { "price_per_night": 1500.00, "available":  6 },
+      "suite":   { "price_per_night": 2400.00, "available":  1 },
+      "family":  { "price_per_night": 2000.00, "available":  2 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0011",
+    "name": "Condesa DF",
+    "area": "Condesa",
+    "address": "Avenida Veracruz 102, Condesa, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "rooftop", "concierge"],
+    "price_per_night_from": 3400.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3400.00, "available":  5 },
+      "double":  { "price_per_night": 4100.00, "available":  8 },
+      "suite":   { "price_per_night": 8800.00, "available":  3 },
+      "family":  { "price_per_night": 6500.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0012",
+    "name": "Villa Condesa",
+    "area": "Condesa",
+    "address": "Colima 428, Condesa, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "restaurant", "bar", "breakfast_included", "concierge"],
+    "price_per_night_from": 2600.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2600.00, "available":  4 },
+      "double":  { "price_per_night": 3100.00, "available":  6 },
+      "suite":   { "price_per_night": 5400.00, "available":  1 },
+      "family":  { "price_per_night": 4200.00, "available":  2 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0013",
+    "name": "Casa Comtesse",
+    "area": "Condesa",
+    "address": "Avenida México 20, Condesa, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "restaurant", "rooftop", "breakfast_included", "pet_friendly"],
+    "price_per_night_from": 2200.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2200.00, "available":  5 },
+      "double":  { "price_per_night": 2650.00, "available":  7 },
+      "suite":   { "price_per_night": 4500.00, "available":  2 },
+      "family":  { "price_per_night": 3600.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0014",
+    "name": "Hotel Boutique Condesa",
+    "area": "Condesa",
+    "address": "Cuernavaca 66, Condesa, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "breakfast_included"],
+    "price_per_night_from": 1650.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1650.00, "available":  6 },
+      "double":  { "price_per_night": 1950.00, "available":  8 },
+      "suite":   { "price_per_night": 3200.00, "available":  2 },
+      "family":  { "price_per_night": 2600.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0015",
+    "name": "Red Tree House",
+    "area": "Condesa",
+    "address": "Culiacán 6, Condesa, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "breakfast_included", "pet_friendly"],
+    "price_per_night_from": 1350.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1350.00, "available":  4 },
+      "double":  { "price_per_night": 1600.00, "available":  5 },
+      "suite":   { "price_per_night": 2600.00, "available":  1 },
+      "family":  { "price_per_night": 2100.00, "available":  2 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0016",
+    "name": "Gran Hotel Ciudad de México",
+    "area": "Historic Center",
+    "address": "16 de Septiembre 82, Centro Histórico, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "spa", "restaurant", "bar", "rooftop", "concierge", "business_center"],
+    "price_per_night_from": 3600.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3600.00, "available":  6 },
+      "double":  { "price_per_night": 4300.00, "available":  9 },
+      "suite":   { "price_per_night": 9500.00, "available":  3 },
+      "family":  { "price_per_night": 6900.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0017",
+    "name": "Zócalo Central",
+    "area": "Historic Center",
+    "address": "5 de Mayo 61, Centro Histórico, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "restaurant", "bar", "rooftop", "concierge"],
+    "price_per_night_from": 2400.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2400.00, "available":  5 },
+      "double":  { "price_per_night": 2850.00, "available":  8 },
+      "suite":   { "price_per_night": 5500.00, "available":  2 },
+      "family":  { "price_per_night": 4300.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0018",
+    "name": "Downtown México",
+    "area": "Historic Center",
+    "address": "Isabel la Católica 30, Centro Histórico, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "pool", "gym", "restaurant", "bar", "rooftop"],
+    "price_per_night_from": 2800.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2800.00, "available":  4 },
+      "double":  { "price_per_night": 3300.00, "available":  7 },
+      "suite":   { "price_per_night": 6200.00, "available":  2 },
+      "family":  { "price_per_night": 4900.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0019",
+    "name": "Umbral Curio Collection by Hilton",
+    "area": "Historic Center",
+    "address": "Venustiano Carranza 69, Centro Histórico, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "gym", "spa", "restaurant", "bar", "rooftop", "business_center"],
+    "price_per_night_from": 2650.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2650.00, "available":  6 },
+      "double":  { "price_per_night": 3150.00, "available":  9 },
+      "suite":   { "price_per_night": 6500.00, "available":  3 },
+      "family":  { "price_per_night": 5100.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0020",
+    "name": "Hotel Catedral",
+    "area": "Historic Center",
+    "address": "Donceles 95, Centro Histórico, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "bar", "breakfast_included"],
+    "price_per_night_from": 1400.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1400.00, "available":  8 },
+      "double":  { "price_per_night": 1700.00, "available": 12 },
+      "suite":   { "price_per_night": 2800.00, "available":  3 },
+      "family":  { "price_per_night": 2300.00, "available":  5 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0021",
+    "name": "Camino Real Santa Fe",
+    "area": "Santa Fe",
+    "address": "Guillermo González Camarena 300, Santa Fe, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "business_center", "airport_shuttle"],
+    "price_per_night_from": 3100.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3100.00, "available":  8 },
+      "double":  { "price_per_night": 3700.00, "available": 12 },
+      "suite":   { "price_per_night": 8200.00, "available":  4 },
+      "family":  { "price_per_night": 6100.00, "available":  5 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0022",
+    "name": "The Westin Santa Fe",
+    "area": "Santa Fe",
+    "address": "Javier Barros Sierra 540, Santa Fe, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "business_center"],
+    "price_per_night_from": 3400.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3400.00, "available":  7 },
+      "double":  { "price_per_night": 4000.00, "available": 11 },
+      "suite":   { "price_per_night": 8900.00, "available":  3 },
+      "family":  { "price_per_night": 6700.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0023",
+    "name": "JW Marriott Hotel Ciudad de México Santa Fe",
+    "area": "Santa Fe",
+    "address": "Juan Salvador Agraz 68, Santa Fe, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "business_center", "concierge"],
+    "price_per_night_from": 3700.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3700.00, "available":  6 },
+      "double":  { "price_per_night": 4400.00, "available": 10 },
+      "suite":   { "price_per_night": 9600.00, "available":  3 },
+      "family":  { "price_per_night": 7200.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0024",
+    "name": "NH Collection Santa Fe",
+    "area": "Santa Fe",
+    "address": "Vasco de Quiroga 4499, Santa Fe, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "gym", "restaurant", "bar", "parking", "business_center", "breakfast_included"],
+    "price_per_night_from": 2350.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2350.00, "available":  9 },
+      "double":  { "price_per_night": 2850.00, "available": 13 },
+      "suite":   { "price_per_night": 5400.00, "available":  4 },
+      "family":  { "price_per_night": 4300.00, "available":  6 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0025",
+    "name": "Fiesta Inn Santa Fe",
+    "area": "Santa Fe",
+    "address": "Calle 3 45, Santa Fe, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "gym", "restaurant", "parking", "business_center", "breakfast_included"],
+    "price_per_night_from": 1550.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1550.00, "available": 10 },
+      "double":  { "price_per_night": 1850.00, "available": 14 },
+      "suite":   { "price_per_night": 3200.00, "available":  4 },
+      "family":  { "price_per_night": 2600.00, "available":  6 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0026",
+    "name": "Four Seasons Hotel México City",
+    "area": "Reforma",
+    "address": "Paseo de la Reforma 500, Juárez, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "business_center", "concierge", "rooftop"],
+    "price_per_night_from": 5200.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 5200.00, "available":  5 },
+      "double":  { "price_per_night": 6100.00, "available":  8 },
+      "suite":   { "price_per_night":12500.00, "available":  3 },
+      "family":  { "price_per_night": 9200.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0027",
+    "name": "The St. Regis México City",
+    "area": "Reforma",
+    "address": "Paseo de la Reforma 439, Cuauhtémoc, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "business_center", "concierge"],
+    "price_per_night_from": 5500.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 5500.00, "available":  4 },
+      "double":  { "price_per_night": 6500.00, "available":  7 },
+      "suite":   { "price_per_night":13800.00, "available":  2 },
+      "family":  { "price_per_night": 9900.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0028",
+    "name": "Sofitel México City Reforma",
+    "area": "Reforma",
+    "address": "Paseo de la Reforma 297, Cuauhtémoc, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "rooftop", "concierge"],
+    "price_per_night_from": 4500.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 4500.00, "available":  5 },
+      "double":  { "price_per_night": 5300.00, "available":  9 },
+      "suite":   { "price_per_night":11200.00, "available":  3 },
+      "family":  { "price_per_night": 8400.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0029",
+    "name": "Marquis Reforma",
+    "area": "Reforma",
+    "address": "Paseo de la Reforma 465, Cuauhtémoc, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "spa", "restaurant", "bar", "parking", "business_center"],
+    "price_per_night_from": 3800.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3800.00, "available":  6 },
+      "double":  { "price_per_night": 4500.00, "available": 10 },
+      "suite":   { "price_per_night": 9500.00, "available":  3 },
+      "family":  { "price_per_night": 7100.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0030",
+    "name": "Hyatt Regency México City Reforma",
+    "area": "Reforma",
+    "address": "Paseo de la Reforma 24, Guerrero, Ciudad de México",
+    "stars": 5,
+    "amenities": ["wifi", "pool", "gym", "restaurant", "bar", "parking", "business_center", "concierge"],
+    "price_per_night_from": 3500.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 3500.00, "available":  7 },
+      "double":  { "price_per_night": 4200.00, "available": 11 },
+      "suite":   { "price_per_night": 9000.00, "available":  4 },
+      "family":  { "price_per_night": 6800.00, "available":  5 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0031",
+    "name": "Casa Corazón Coyoacán",
+    "area": "Coyoacán",
+    "address": "Francisco Ortega 78, Del Carmen, Coyoacán, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "restaurant", "breakfast_included", "pet_friendly", "concierge"],
+    "price_per_night_from": 1850.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1850.00, "available":  4 },
+      "double":  { "price_per_night": 2250.00, "available":  6 },
+      "suite":   { "price_per_night": 4000.00, "available":  1 },
+      "family":  { "price_per_night": 3200.00, "available":  2 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0032",
+    "name": "Hotel Boutique Cielito Lindo",
+    "area": "Coyoacán",
+    "address": "Alberto Zamora 78, Villa Coyoacán, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "breakfast_included"],
+    "price_per_night_from": 1350.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1350.00, "available":  5 },
+      "double":  { "price_per_night": 1600.00, "available":  7 },
+      "suite":   { "price_per_night": 2700.00, "available":  2 },
+      "family":  { "price_per_night": 2200.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0033",
+    "name": "H21 Hotel Coyoacán",
+    "area": "Coyoacán",
+    "address": "Higuera 21, Villa Coyoacán, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "bar", "breakfast_included"],
+    "price_per_night_from": 1250.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1250.00, "available":  6 },
+      "double":  { "price_per_night": 1500.00, "available":  8 },
+      "suite":   { "price_per_night": 2500.00, "available":  2 },
+      "family":  { "price_per_night": 2050.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0034",
+    "name": "Hotel Xolo Coyoacán",
+    "area": "Coyoacán",
+    "address": "Xicoténcatl 68, Del Carmen, Coyoacán, Ciudad de México",
+    "stars": 2,
+    "amenities": ["wifi", "breakfast_included", "pet_friendly"],
+    "price_per_night_from": 950.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night":  950.00, "available":  7 },
+      "double":  { "price_per_night": 1150.00, "available":  9 },
+      "suite":   { "price_per_night": 1900.00, "available":  2 },
+      "family":  { "price_per_night": 1550.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0035",
+    "name": "Hostal Cuija Coyoacán",
+    "area": "Coyoacán",
+    "address": "Berlín 268, Del Carmen, Coyoacán, Ciudad de México",
+    "stars": 2,
+    "amenities": ["wifi", "breakfast_included"],
+    "price_per_night_from": 800.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night":  800.00, "available":  8 },
+      "double":  { "price_per_night":  980.00, "available": 10 },
+      "suite":   { "price_per_night": 1600.00, "available":  2 },
+      "family":  { "price_per_night": 1300.00, "available":  3 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0036",
+    "name": "Fiesta Inn Del Valle",
+    "area": "Del Valle",
+    "address": "Insurgentes Sur 1373, Del Valle, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "gym", "restaurant", "parking", "business_center", "breakfast_included"],
+    "price_per_night_from": 1450.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1450.00, "available":  9 },
+      "double":  { "price_per_night": 1750.00, "available": 12 },
+      "suite":   { "price_per_night": 2950.00, "available":  3 },
+      "family":  { "price_per_night": 2400.00, "available":  5 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0037",
+    "name": "City Express Del Valle",
+    "area": "Del Valle",
+    "address": "Xola 535, Del Valle, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "gym", "parking", "business_center", "breakfast_included"],
+    "price_per_night_from": 1250.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1250.00, "available": 10 },
+      "double":  { "price_per_night": 1500.00, "available": 14 },
+      "suite":   { "price_per_night": 2500.00, "available":  3 },
+      "family":  { "price_per_night": 2050.00, "available":  5 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0038",
+    "name": "Best Western Del Valle",
+    "area": "Del Valle",
+    "address": "Insurgentes Sur 1131, Del Valle, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "parking", "breakfast_included"],
+    "price_per_night_from": 1150.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1150.00, "available":  8 },
+      "double":  { "price_per_night": 1400.00, "available": 11 },
+      "suite":   { "price_per_night": 2350.00, "available":  2 },
+      "family":  { "price_per_night": 1900.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0039",
+    "name": "Roommate Valentina",
+    "area": "Del Valle",
+    "address": "Amores 806, Del Valle, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "rooftop", "breakfast_included", "pet_friendly"],
+    "price_per_night_from": 1350.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1350.00, "available":  6 },
+      "double":  { "price_per_night": 1650.00, "available":  8 },
+      "suite":   { "price_per_night": 2700.00, "available":  2 },
+      "family":  { "price_per_night": 2200.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0040",
+    "name": "One Del Valle",
+    "area": "Del Valle",
+    "address": "Insurgentes Sur 1631, Del Valle, Ciudad de México",
+    "stars": 2,
+    "amenities": ["wifi", "parking", "breakfast_included"],
+    "price_per_night_from": 900.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night":  900.00, "available": 12 },
+      "double":  { "price_per_night": 1100.00, "available": 15 },
+      "suite":   { "price_per_night": 1800.00, "available":  3 },
+      "family":  { "price_per_night": 1500.00, "available":  5 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0041",
+    "name": "Hotel Geneve",
+    "area": "Zona Rosa",
+    "address": "Londres 130, Juárez, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "gym", "restaurant", "bar", "parking", "business_center", "breakfast_included"],
+    "price_per_night_from": 1850.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1850.00, "available":  8 },
+      "double":  { "price_per_night": 2200.00, "available": 11 },
+      "suite":   { "price_per_night": 4200.00, "available":  3 },
+      "family":  { "price_per_night": 3400.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0042",
+    "name": "Krystal Grand Reforma Uno",
+    "area": "Zona Rosa",
+    "address": "Reforma 1, Juárez, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "pool", "gym", "restaurant", "bar", "parking", "business_center", "spa"],
+    "price_per_night_from": 2100.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2100.00, "available":  7 },
+      "double":  { "price_per_night": 2550.00, "available": 10 },
+      "suite":   { "price_per_night": 4800.00, "available":  3 },
+      "family":  { "price_per_night": 3800.00, "available":  4 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0043",
+    "name": "Hotel Suites Amberes",
+    "area": "Zona Rosa",
+    "address": "Amberes 64, Juárez, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "bar", "breakfast_included"],
+    "price_per_night_from": 1300.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1300.00, "available":  6 },
+      "double":  { "price_per_night": 1550.00, "available":  8 },
+      "suite":   { "price_per_night": 2600.00, "available":  2 },
+      "family":  { "price_per_night": 2100.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0044",
+    "name": "María Cristina Best Western",
+    "area": "Zona Rosa",
+    "address": "Río Lerma 31, Cuauhtémoc, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "restaurant", "bar", "parking", "breakfast_included"],
+    "price_per_night_from": 1200.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1200.00, "available":  7 },
+      "double":  { "price_per_night": 1450.00, "available":  9 },
+      "suite":   { "price_per_night": 2400.00, "available":  2 },
+      "family":  { "price_per_night": 1950.00, "available":  3 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0045",
+    "name": "Hotel Bristol",
+    "area": "Zona Rosa",
+    "address": "Sena 17, Juárez, Ciudad de México",
+    "stars": 2,
+    "amenities": ["wifi", "restaurant", "breakfast_included"],
+    "price_per_night_from": 850.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night":  850.00, "available": 10 },
+      "double":  { "price_per_night": 1050.00, "available": 13 },
+      "suite":   { "price_per_night": 1700.00, "available":  2 },
+      "family":  { "price_per_night": 1400.00, "available":  4 }
+    }
+  },
+
+  {
+    "hotel_id": "htl_cdmx_0046",
+    "name": "Hilton México City Aeropuerto Terminal 2",
+    "area": "Airport (Terminal 1/2)",
+    "address": "Blvd. Puerto Aéreo T2, Venustiano Carranza, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "pool", "gym", "restaurant", "bar", "parking", "business_center", "airport_shuttle", "breakfast_included"],
+    "price_per_night_from": 2650.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2650.00, "available": 10 },
+      "double":  { "price_per_night": 3100.00, "available": 15 },
+      "suite":   { "price_per_night": 6200.00, "available":  4 },
+      "family":  { "price_per_night": 4800.00, "available":  6 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0047",
+    "name": "Camino Real Aeropuerto",
+    "area": "Airport (Terminal 1/2)",
+    "address": "Puerto México 80, Peñón de los Baños, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "pool", "gym", "restaurant", "bar", "parking", "airport_shuttle", "business_center"],
+    "price_per_night_from": 2400.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2400.00, "available":  9 },
+      "double":  { "price_per_night": 2850.00, "available": 13 },
+      "suite":   { "price_per_night": 5600.00, "available":  4 },
+      "family":  { "price_per_night": 4400.00, "available":  5 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0048",
+    "name": "NH Terminal 2 Aeropuerto",
+    "area": "Airport (Terminal 1/2)",
+    "address": "Boulevard Puerto Aéreo Nivel 4 T2, Ciudad de México",
+    "stars": 4,
+    "amenities": ["wifi", "gym", "restaurant", "bar", "airport_shuttle", "business_center", "breakfast_included"],
+    "price_per_night_from": 2250.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 2250.00, "available": 12 },
+      "double":  { "price_per_night": 2700.00, "available": 16 },
+      "suite":   { "price_per_night": 5100.00, "available":  4 },
+      "family":  { "price_per_night": 4000.00, "available":  6 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0049",
+    "name": "Courtyard by Marriott Aeropuerto",
+    "area": "Airport (Terminal 1/2)",
+    "address": "Blvd. Puerto Aéreo 502, Venustiano Carranza, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "gym", "restaurant", "parking", "airport_shuttle", "business_center", "breakfast_included"],
+    "price_per_night_from": 1750.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1750.00, "available": 10 },
+      "double":  { "price_per_night": 2100.00, "available": 14 },
+      "suite":   { "price_per_night": 3600.00, "available":  3 },
+      "family":  { "price_per_night": 2900.00, "available":  5 }
+    }
+  },
+  {
+    "hotel_id": "htl_cdmx_0050",
+    "name": "Fiesta Inn Aeropuerto",
+    "area": "Airport (Terminal 1/2)",
+    "address": "Blvd. Puerto Aéreo 502-A, Venustiano Carranza, Ciudad de México",
+    "stars": 3,
+    "amenities": ["wifi", "gym", "restaurant", "parking", "airport_shuttle", "breakfast_included"],
+    "price_per_night_from": 1550.00,
+    "currency": "MXN",
+    "rooms": {
+      "single":  { "price_per_night": 1550.00, "available": 12 },
+      "double":  { "price_per_night": 1850.00, "available": 16 },
+      "suite":   { "price_per_night": 3100.00, "available":  4 },
+      "family":  { "price_per_night": 2500.00, "available":  6 }
+    }
+  }
+]
