@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "id": "3",
+  "method": "message/send",
+  "params": {
+    "message": {
+      "role": "user",
+      "parts": [{ "text": "Necesito un hotel de 4 estrellas en Polanco, CDMX, del 10 al 12 de septiembre para 2 personas." }],
+      "messageId": "msg-hoteles-001"
+    }
+  }
+}
